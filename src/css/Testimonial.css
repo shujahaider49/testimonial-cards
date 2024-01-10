@@ -1,0 +1,215 @@
+.slick-slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .slick-list {
+    position: relative;
+    display: block !important;
+    overflow: hidden;
+    padding: 100px !important;
+    width: 100%;
+  }
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .slick-slide div {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-slide .image {
+    object-fit: cover;
+    border-radius: 2px;
+    min-width: 150px !important;
+    width: 80%;
+  }
+  .slick-slide div div span {
+    margin-top: 10px;
+    width: inherit;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #111;
+  }
+  .image {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 580px) {
+    .slick-slide div div span {
+      display: none;
+    }
+    .slick-slide.slick-current div div span {
+      display: block;
+      margin-top: 10px;
+      width: inherit;
+      text-align: center;
+      font-size: 0.7rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #111;
+    }
+
+    .quote {
+      font-size: 5px;
+      color: #555;
+      padding: 1rem;
+    }
+  }
+  .slick-slide:not(.slick-active) {
+    position: relative;
+    z-index: 997;
+  }
+  .slick-slide.slick-active:not(.slick-current) {
+    position: relative;
+    z-index: 998;
+    transform: scale(1.1);
+    transition: 0.35s;
+  }
+  .slick-slide.slick-active.slick-current {
+    position: relative;
+    z-index: 999;
+    transform: scale(1.6);
+    transition: 0.25s;
+  }
+  .slick-slide.slick-active:not(.slick-current) .image,
+  .slick-slide.slick-active.slick-current .image,
+  .slick-slide:not(.slick-active) .image {
+    width: 100% !important;
+  }
+  .slick-prev,
+  .slick-next {
+    /* display: none !important; */
+  }
+  .custom-prevArrow,
+  .custom-nextArrow {
+    position: relative;
+    z-index: 99999;
+    top: -10px;
+  }
+  .custom-prevArrow {
+    left: -10px;
+  }
+  .custom-nextArrow {
+    right: -10px;
+  }
+  .custom-prevArrow:hover,
+  .custom-nextArrow:hover {
+    fill: red;
+    cursor: pointer;
+  }
+  
+
+.gtco-testimonials {
+    
+  
+    .avatar {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 29px;
+    }
+  
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+  
+    .quote {
+      font-size: 16px;
+      color: #555;
+      padding: 1rem;
+    }
+  
+    .slick-slide.slick-center {
+      background-color: #36454F; 
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.gtco-testimonials {
+    position: relative;
+  }
+  
+  .gtco-testimonials .slick-slide {
+    filter: blur(2px);
+    transition: filter 1s ease-in-out;
+  }
+  
+  .gtco-testimonials .slick-slide.slick-center {
+    filter: blur(0);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .gtco-testimonials .avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 29px;
+  }
+  
+  .gtco-testimonials .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .gtco-testimonials .quote {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .gtco-testimonials .custom-prevArrow,
+  .gtco-testimonials .custom-nextArrow {
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .gtco-testimonials .custom-prevArrow {
+    left: -30px;
+  }
+  
+  .gtco-testimonials .custom-nextArrow {
+    right: -30px;
+  }
+  
+  .gtco-testimonials .custom-prevArrow:hover,
+  .gtco-testimonials .custom-nextArrow:hover {
+    fill: red;
+    cursor: pointer;
+  }
+  
+.gtco-testimonials .slick-slide.slick-center {
+  background-color: #36454F;
+  transition: background-color 0.3s ease;
+  border-radius: 8%;
+}
+
+.gtco-testimonials .slick-slide.slick-center .name,
+.gtco-testimonials .slick-slide.slick-center .quote {
+  color: #fff;
+}
